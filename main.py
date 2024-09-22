@@ -12,7 +12,7 @@ file.close()
 
 
 soup = BeautifulSoup (data, "html.parser" )
-beers = soup.find_all( "a", "css-1x5s8wf")
+beers = soup.find_all( "a", "css-145u7id")
 
 # print(len(beers))
 
@@ -22,21 +22,22 @@ for beer in beers:
     link = beer.get("href")
     link = "https://www.systembolaget.se" + link
     
-    style = beer.find("p", "css-i37je3").text
+    style = beer.find("p", "css-apwxtg").text
 
-    name1 = beer.find("p", "css-1n0krvs").text
+    name1 = beer.find("p", "css-1i86311").text
     try:
-        name2 = beer.find("p", "css-123rcq0").text
+        name2 = beer.find("p", "css-i3atuq").text
     except:
         name2 = ""
 
-    info = beer.find_all("p", "css-bbhn7t")
+    info = beer.find("div", "css-1dtnjt5").text
+    print(info)
 
-    country = info[0].text
+    country = re.search("([^0-9]*)", info).group(1)
 
-    size = info[1].text[:-3]
+    size = re.search("([0-9]*) ml", info).group(1)
 
-    vol = info[2].text[:-7]
+    vol = re.search("ml(.*) % vol", info).group(1)
     v = vol.split(",")
     if len(v) != 1:
         n, d = v
@@ -44,7 +45,7 @@ for beer in beers:
     else:
         abv = int(vol)
 
-    price = beer.find("p", "css-17znts1").text
+    price = beer.find("p", "css-1k0oafj").text
     n, d = price.split(":")
     n = int(n)
     if "*" in d:
@@ -56,7 +57,7 @@ for beer in beers:
         price = n+0.01*int(d)
 
     try:
-        store_info = beer.find("div", "css-1w6cke0").text
+        store_info = beer.find("div", "css-1x8g9wn").text
         num_in_store = re.search("Antal i butik(.*) st", store_info).group(1)
         section = re.search("stSektion(.*)Hylla(.*)", store_info).group(1)
         shelf = re.search("stSektion(.*)Hylla(.*)", store_info).group(2)
