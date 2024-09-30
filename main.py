@@ -6,6 +6,11 @@ import pandas as pd
 import re
 
 
+
+pubrunda = False
+dyr = False
+
+
 file = open("lista.html", "r", encoding="utf8")
 data = file.read()
 file.close()
@@ -138,6 +143,11 @@ df.to_csv("öl.csv", index=False)
 
 # %%
 def myround(x):
+    if pubrunda:
+        x *= 1.25
+    if dyr:
+        x += 5
+
     x = float(x)+2.5
     return 5 * round(x/5)
 
