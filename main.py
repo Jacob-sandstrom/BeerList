@@ -1,5 +1,9 @@
 #%%
 
+# Search and replace in spreacsheet
+# ([0-9])\.
+# $1,
+
 from bs4 import BeautifulSoup
 import numpy as np
 import pandas as pd
