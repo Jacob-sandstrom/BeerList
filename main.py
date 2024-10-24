@@ -115,14 +115,16 @@ alkoholfritt = []
 
 övrigt = []
 
-for i, b in enumerate(data):
+sorted_data = sorted(data, key=lambda x: x[2], reverse=False)
+
+for i, b in enumerate(sorted_data):
     if "alkoholfri" in b[6].lower():
         alkoholfritt.append(b)
     # elif "ale" in b[6].lower():
     #     ale.append(b)
     elif "belgisk" in b[6].lower():
         belgisk.append(b)
-    elif "ipa" in b[6].lower():
+    elif "ipa" in b[6].lower() or "pale" in b[6].lower():
         ipa.append(b)
     elif "ale" in b[6].lower():
         övrigAle.append(b)
@@ -144,7 +146,7 @@ for i, b in enumerate(data):
 print(övrigt)
 
 
-ordered = [[],["Lager"]] + lager + [[],["Vete"]] + vete + [[],["Belgare"]] + belgisk + [[],["Pale ale"]] + ipa + [[],["Övrig ale"]] + övrigAle + [[],["Porter"]] + porter + [[],["Suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]] + övrigt
+ordered = [[],["Lager"]] + lager + [[],["Vete"]] + vete + [[],["Belgare"]] + belgisk + [[],["IPA/Pale ale"]] + ipa + [[],["Övrig ale"]] + övrigAle + [[],["Porter"]] + porter + [[],["Suröl"]] + suröl + [[],["cider"]] + cider + [[],["vin"]] + vin + [[],["alkoholfritt"]] + alkoholfritt + [[],[]] + övrigt
 
 # print(len(ordered))
 
@@ -170,14 +172,23 @@ latex = ""
 s = ""
 for be in lager:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
-
-    
 latex += s
 
-latex += "\n\\vspace{1cm}\n \\textbf{Ale}\\\\\n"
-
+latex += "\n\\vspace{1cm}\n \\textbf{Belgisk}\\\\\n"
 s = ""
-for be in ale:
+for be in belgisk:
+    s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
+latex += s
+
+latex += "\n\\vspace{1cm}\n \\textbf{IPA / Pale Ale}\\\\\n"
+s = ""
+for be in ipa:
+    s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
+latex += s
+
+latex += "\n\\vspace{1cm}\n \\textbf{Övrig Ale}\\\\\n"
+s = ""
+for be in övrigAle:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
 latex += s
 
@@ -208,6 +219,12 @@ latex += s
 latex += "\n\\vspace{1cm}\n \\textbf{Vin}\\\\\n"
 s = ""
 for be in vin:
+    s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
+latex += s
+
+latex += "\n\\vspace{1cm}\n \\textbf{Övrigt}\\\\\n"
+s = ""
+for be in övrigt:
     s += be[0] + " " + be[1] + " \dotfill " + str(myround(be[2])) + " \\\\ \n"
 latex += s
 
