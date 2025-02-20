@@ -17,6 +17,8 @@ import re
 pubrunda = False # pris * 1.25 
 dyr = False # + 10 kr
 
+iButik = True # Ta hänsyn till hyllplast
+
 
 file = open("lista.html", "r", encoding="utf8")
 data = file.read()
@@ -28,19 +30,23 @@ file.close()
 
 soup = BeautifulSoup (data, "html.parser" )
 text = soup.get_text("|")
-
+print(text)
 
 # Slice and dice text
 a = text.split("Byt vy")
 b = a[1].split("pant tillkommer")
-c = re.split('(Hylla\|(?>–|[0-9]+)\|)', b[0])
+c = re.split('(Hylla\|(?>–|[0-9]+)\||Drycken finns inte i vald butik\|)', b[0])
+print("\n\n")
+print(c)
 d = c[0:-1]
-
+# print("\n\n")
+# print(d)
+# print("\n\n")
 
 beers = []
 i = 0
 while i < len(d):
-    print(i)
+    # print(i)
     b = d[i] + d[i+1]
     beers.append(b)
     i += 2
@@ -60,6 +66,10 @@ for beer in beers:
     print(beer)
     print("\n")
 
+    adjusted_i = 0
+    if beer.__contains__("Drycken finns inte i vald butik"):
+        adjusted_i = 5
+
 
 
     # link = beer.get("href")
@@ -75,7 +85,7 @@ for beer in beers:
     #     name2 = beer.find("p", "css-i3atuq").text
     # except:
     #     name2 = ""
-    if len(beer) == 14:
+    if len(beer) == 14 - adjusted_i:
         name2 = beer[2]
     else:
         name2 = ""
@@ -83,10 +93,10 @@ for beer in beers:
     # info = beer.find("div", "css-1dtnjt5").text
 
     # country = re.search("([^0-9]*)", info).group(1)
-    country = beer[-10]
+    country = beer[-10+adjusted_i]
 
     # size = re.search("([0-9]*) ml", info).group(1)
-    size = beer[-9]
+    size = beer[-9+adjusted_i]
 
     # vol = re.search("ml(.*) % vol", info).group(1)
     # v = vol.split(",")
@@ -95,10 +105,10 @@ for beer in beers:
     #     abv = int(n)+0.1*int(d)
     # else:
     #     abv = int(vol)
-    abv = beer[-8]
+    abv = beer[-8+adjusted_i]
 
     # price = beer.find("p", "css-1k0oafj").text
-    price = beer[-7]
+    price = beer[-7+adjusted_i]
 
     # print(price)
     n, d = price.split(":")
@@ -124,9 +134,14 @@ for beer in beers:
     #     section = ""
     #     shelf = ""
 
-    num_in_store = beer[-5]
-    section = beer[-3]
-    shelf = beer[-1]
+    if iButik:
+        num_in_store = beer[-5]
+        section = beer[-3]
+        shelf = beer[-1]
+    else:
+        num_in_store = ""
+        section = ""
+        shelf = ""
 
     # print(link)
     # print(style)
@@ -145,7 +160,7 @@ for beer in beers:
 
 
 
-
+# print(data)
 
 
 # %%
@@ -174,12 +189,12 @@ for i, b in enumerate(sorted_data):
     #     ale.append(b)
     elif "belgisk" in b[6].lower():
         belgisk.append(b)
+    elif "lager" in b[6].lower():
+        lager.append(b)
     elif "ipa" in b[6].lower() or "pale" in b[6].lower():
         ipa.append(b)
     elif "ale" in b[6].lower():
         övrigÖl.append(b)
-    elif "lager" in b[6].lower():
-        lager.append(b)
     elif "porter" in b[6].lower():
         porter.append(b)
     elif "syrlig" in b[6].lower():

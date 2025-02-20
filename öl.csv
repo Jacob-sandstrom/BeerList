@@ -1,57 +1,33 @@
 namn1,namn2,pris,köp antal,tot pris,länk,stil,land,storlek,alkohol,antal i butik,sektion,hylla
 ,,,,,,,,,,,,
 Lager,,,,,,,,,,,,
-Falcon Export,,12.5,,,,Öl Ljus lager Internationell stil,Sverige,330 ml,"5,2 % vol.",999+ st,30,02
-Arton56,Glutenfri,15.5,,,,Öl Ljus lager Internationell stil,Sverige,330 ml,"5,2 % vol.",218 st,31,08
-Bryggmästarens,Premium Dark,19.9,,,,"Öl, Mörk lager, Dunkel",Sverige,500 ml,5 % vol.,11 st,20,05
-Kaiserdom,Pilsner,20.9,,,,"Öl, Ljus lager, Pilsner - tysk stil",Tyskland,500 ml,"4,9 % vol.",129 st,31,01
-Arboga 102,,24.4,,,,Öl Ljus lager Starkare lager,Sverige,500 ml,"10,2 % vol.",268 st,29,01
-Vega Bryggeri,Schwarzbier,27.9,,,,"Öl, Mörk lager, Schwarzbier",Sverige,330 ml,"4,8 % vol.",72 st,20,05
+Lucky Bait,,10.5,,,,"Öl, Ljus lager, Modern stil/India Pale Lager",Sverige,330 ml,"5,4 % vol.",999+ st,31,06
+Falcon Export,,12.5,,,,"Öl, Ljus lager, Internationell stil",Sverige,330 ml,"5,2 % vol.",952 st,30,02
+Eriksberg,,14.5,,,,"Öl, Ljus lager, Dortmunder och helles",Sverige,330 ml,"5,3 % vol.",498 st,32,11
+Arton56,Glutenfri,15.5,,,,"Öl, Ljus lager, Internationell stil",Sverige,330 ml,"5,2 % vol.",479 st,31,08
 ,,,,,,,,,,,,
 Vete,,,,,,,,,,,,
-1664 Blanc,,19.3,,,,Öl Veteöl Witbier,Internationellt märke,330 ml,5 % vol.,312 st,32,08
-Allagash Brewing,Ski House,35.9,,,,"Öl, Veteöl, Övrig veteöl",USA,355 ml,"7,5 % vol.",64 st,TS,01
+1664 Blanc,,19.3,,,,"Öl, Veteöl, Witbier",Internationellt märke,330 ml,5 % vol.,116 st,32,08
 ,,,,,,,,,,,,
 Belgare,,,,,,,,,,,,
-Averbode,Abbey Extra,25.9,,,,"Öl, Ale, Belgisk ljus ale/Blonde",Belgien,330 ml,"4,8 % vol.",18 st,20,06
-Tripel Karmeliet,,32.9,,,,"Öl, Ale, Ljus stark belgisk ale/Trippel",Belgien,330 ml,"8,4 % vol.",46 st,ÖS,02
-Rochefort 10,,48.9,,,,"Öl, Ale, Mörk stark belgisk ale",Belgien,330 ml,"11,3 % vol.",89 st,TS,04
 ,,,,,,,,,,,,
 IPA/Pale ale,,,,,,,,,,,,
-Lucky Bait,,10.5,,,,Öl Ljus lager Modern stil/India Pale Lager,Sverige,330 ml,"5,4 % vol.",948 st,31,06
-Smith Street,Session IPA Gluten Free,19.9,,,,"Öl, Ale, Session IPA",Sverige,330 ml,"4,4 % vol.",17 st,20,09
-Poppels,Passion Pale Ale,26.9,,,,"Öl, Ale, Amerikansk pale ale (APA)",Sverige,330 ml,"5,2 % vol.",46 st,25,03
-Flying Dog,Raging Bitch Belgian IPA,29.9,,,,"Öl, Ale, India pale ale (IPA)",USA,355 ml,"8,3 % vol.",62 st,TS,01
-Hop Nosh,Uinta Brewing,38.9,,,,"Öl, Ale, India pale ale (IPA)",USA,473 ml,"7,3 % vol.",58 st,TS,01
-Stigbergets,WHIP IT,40.9,,,,"Öl, Ale, New England IPA/Hazy IPA",Sverige,440 ml,6 % vol.,43 st,27,04
-O/O Brewing,Hyacint IPA,50.9,,,,"Öl, Ale, India pale ale (IPA)",Sverige,440 ml,"6,7 % vol.",51 st,27,01
+Pioneer,Uber Hazy Double IPA,40.9,,,,"Öl, Ale, Imperial/Dubbel IPA",USA,473 ml,"8,5 % vol.",90 st,Ö1,04
+Prizm,Gammagt Tipa,70.9,,,,"Öl, Ale, Imperial/Dubbel IPA",Frankrike,440 ml,10 % vol.,64 st,Ö1,04
 ,,,,,,,,,,,,
 Övrig öl,,,,,,,,,,,,
-Zeunerts,Höga Kusten,18.5,,,,Öl annan öl Blandning av olika öltyper,Sverige,500 ml,"5,3 % vol.",27 st,32,07
 ,,,,,,,,,,,,
 Porter,,,,,,,,,,,,
-Carnegie,Porter,20.6,,,,Öl Torr porter och stout,Sverige,330 ml,"5,5 % vol.",60 st,32,01
-Finn,Chocolate Stout,25.9,,,,"Öl, Söt porter och stout",Sverige,330 ml,"5,5 % vol.",47 st,32,02
-Guinness,Draught,28.9,,,,Öl Torr porter och stout,Irland,440 ml,"4,2 % vol.",95 st,32,01
-Amundsen,Sticky little fingers barrel aged ultra pastry stout,60.9,,,,"Öl, Porter och stout",Norge,440 ml,13 % vol.,44 st,TS,01
+Guinness,Draught,28.9,,,,"Öl, Torr porter och stout",Irland,440 ml,"4,2 % vol.",130 st,32,01
+Dugges,Perfect Idjit,91.0,,,,"Öl, Imperial porter och stout",Sverige,330 ml,11 % vol.,55 st,Ö1,06
 ,,,,,,,,,,,,
 Suröl,,,,,,,,,,,,
-Brekeriet Beer,Pinkish,25.9,,,,Öl Övrig syrlig öl,Sverige,330 ml,"3,6 % vol.",35 st,32,06
-This is HOW,How To Tear Down This Wall Raspberry,30.9,,,,Öl Övrig syrlig öl,Sverige,330 ml,"4,5 % vol.",23 st,ÖS,05
-Beerbliotek,A Passion for Gingers,34.2,,,,"Öl, Syrlig öl, Berliner weisse",Sverige,330 ml,"3,8 % vol.",50 st,32,05
-Dugges,Rainbow,39.3,,,,Öl Övrig syrlig öl,Sverige,330 ml,"4,5 % vol.",49 st,ÖS,05
-Duckpond,Darkwing,46.9,,,,Öl Syrlig öl Gose och lichtenhainer,Sverige,330 ml,6 % vol.,60 st,32,06
-Fermenterarna,Burger Burger,61.6,,,,"Öl, Övrig syrlig öl",Sverige,440 ml,8 % vol.,28 st,32,06
-Fake Bake,,64.9,,,,"Öl, Övrig syrlig öl",Storbritannien,330 ml,"9,5 % vol.",30 st,ÖS,05
-Kriek,Mariage Parfait,85.0,,,,"Öl, Syrlig öl, Frukt- och bärlambic",Belgien,375 ml,8 % vol.,35 st,ÖS,04
-Gouden Carolus,"Indulgence Margaretha, 2024",165.6,,,,"Öl, Övrig syrlig öl",Belgien,750 ml,"8,5 % vol.",10 st,TS,01
+Dugges,Rainbow,39.3,,,,"Öl, Övrig syrlig öl",Sverige,330 ml,"4,5 % vol.",39 st,Ö5,06
+Elmeleven X Marlobobo,Pioneers & Explorers,65.9,,,,"Öl, Övrig syrlig öl",Sverige,440 ml,5 % vol.,40 st,Ö1,05
 ,,,,,,,,,,,,
 cider,,,,,,,,,,,,
-Pistonhead,Cider Hallon och Svarta vinbär,15.9,,,,Cider Söt,Sverige,330 ml,"4,5 % vol.",17 st,24,04
-En Svensk Cider,Päron,16.9,,,,Cider Söt,Sverige,330 ml,"4,5 % vol.",13 st,24,02
-Liquid Industries,The Bellini Project,17.9,,,,Blanddryck Söt,Sverige,330 ml,"4,5 % vol.",80 st,24,04
-Punch Club,Margarita Organic Spritz,23.0,,,,"Blanddryck, Söt",Estland,250 ml,4 % vol.,34 st,24,05
-Ginger Joe,Ginger Beer,23.5,,,,Blanddryck Söt,Internationellt märke,330 ml,4 % vol.,116 st,24,03
+Mokaï Asian Fusion,Cider,16.9,,,,"Cider, Söt",Sverige,330 ml,"4,5 % vol.",44 st,24,04
+En Svensk Cider,Päron,16.9,,,,"Cider, Söt",Sverige,330 ml,"4,5 % vol.",31 st,24,02
 ,,,,,,,,,,,,
 vin,,,,,,,,,,,,
 ,,,,,,,,,,,,
