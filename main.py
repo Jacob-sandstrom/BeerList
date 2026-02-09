@@ -25,7 +25,7 @@ file.close()
 
 
 
-soup = BeautifulSoup (data, "html.parser" )
+soup = BeautifulSoup(data, "html.parser" )
 text = soup.get_text("|")
 print(text)
 
@@ -111,7 +111,7 @@ for beer in beers:
     n, d = price.split(":")
     n = int(n)
     if "*" in d:
-        n += 1
+        n += 2 # pant
         d = d[:-1]
     if d == "-":
         price = n
